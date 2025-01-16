@@ -27,7 +27,7 @@ model User {
   email    String   @unique
   role     UserRole @default(user)
   profile  Profile? //one to one relation with user
-  Post     Post[] //one to many relation with Post
+  post     Post[] //one to many relation with Post
 
   @@map("users")
 }
